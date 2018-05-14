@@ -20,7 +20,7 @@ def detail(request, question_id):
 	except Question.DoesNotExist:
 		raise Http404("Question does not exist")
 		return render(request,'polls/detail.html',{'question':question})
-	
+
 	#return HttpResponse ("Usted esta buscando una pregunta %s." %question_id)
 
 def results (request, question_id):
@@ -28,3 +28,4 @@ def results (request, question_id):
 	return HttpResponse(response % question_id)
 def vote (request, question_id):
 	return HttpResponse("Usted a votado %s." %question_id)
+	#http://www.mediafire.com/convkey/853e/9n4feppccbuq0bjzg.jpg

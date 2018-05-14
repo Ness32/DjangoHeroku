@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from pruebaJango.pruebaJango import views as main
 
 urlpatterns = [
 	url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^',main.IndexView.as_view(), name ='index')
 
 ]
