@@ -1,3 +1,31 @@
-<div align ="center">
-  <img  src="http://www.mediafire.com/convkey/853e/9n4feppccbuq0bjzg.jpg">
-</div>
+{% load staticfiles%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+{% block page_title %}
+<title>Axom Guatemala</title>
+{% endblock page_title %}
+</head>
+{% block body %}
+<body>
+	<div class="wrapper">
+		<div class="content-wrapper">
+      <div align ="center">
+        <img  src="http://www.mediafire.com/convkey/853e/9n4feppccbuq0bjzg.jpg" class="img-responsive">
+      </div>
+		</div>
+		<footer class="main-footer">
+			<strong>Copyright © 2018 Axom Guatemala </strong>
+			Todos los derechos reservados.
+		</footer>
+	</div>
+</body>
+{% endblock body %}
+</html>
